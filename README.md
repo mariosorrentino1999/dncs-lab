@@ -131,7 +131,6 @@ I created 4 different subnets:
 
 ## IP-Map and VLANs
 
-![layout-reti](immagine 1 progetto.jpg)
 
 |  Device  |  Interface |      IP       | Subnet |
 | :------: | :--------: | :-----------: | :----: |
@@ -290,4 +289,3 @@ function changeCookie() {
 </body>
 </html>
 ```
-
