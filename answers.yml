@@ -1,0 +1,18 @@
+FirstName: Mario
+LastName: Sorrentino
+MatriculationNumber: 201579
+AcademicYear: 2019-2020
+GitHubUrl: https://github.com/mariosorrentino1999/dncs-lab.git
+Subnets:
+  HostsA:
+    RequiredAddresses: 47
+    SubnetAddress: 192.168.0.0
+    SubnetPrefixLength: 26
+  HostsB:
+    RequiredAddresses: 164
+    SubnetAddress: 192.168.1.0
+    SubnetPrefixLength: 24
+  Hub:
+    RequiredAddresses: 31
+    SubnetAddress: 192.168.2.0
+    SubnetPrefixLength: 26
