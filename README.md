@@ -134,14 +134,14 @@ I created 4 different subnets:
 
 |  Device  |  Interface |      IP       | Subnet |
 | :------: | :--------: | :-----------: | :----: |
-| Router-1 |   enp0s9   |   10.0.0.1    |   1    |
-| Router-2 |   enp0s9   |   10.0.0.2    |   1    |
+| Router-1 |   enp0s9   |   10.0.1.1    |   1    |
+| Router-2 |   enp0s9   |   10.0.1.2    |   1    |
 | Router-1 |  enp0s8.7  |  192.168.0.1  |   2    |
 |  Host-a  |   enp0s8   |  192.168.0.2  |   2    |
-| Router-1 |  enp0s8.8  |  192.168.2.1  |   3    |
-|  Host-b  |   enp0s8   |  192.168.2.2  |   3    |
-| Router-2 |   enp0s8   |  192.168.4.1  |   4    |
-|  Host-c  |   enp0s8   |  192.168.4.2  |   4    |
+| Router-1 |  enp0s8.8  |  192.168.1.1  |   3    |
+|  Host-b  |   enp0s8   |  192.168.1.2  |   3    |
+| Router-2 |   enp0s8   |  192.168.2.1  |   4    |
+|  Host-c  |   enp0s8   |  192.168.2.2  |   4    |
 
 I created two VLANs for subnet 2 and 3 with Tag 7 and 8.
 
@@ -168,8 +168,8 @@ I then had to setup the switch, assigning the VLAN tags to the ports.
 First of all, I created a bridge named "switch" with the command ```ovs-vsctl add-br switch``` then, I configured the ports with the following commands:
 ```
  ovs-vsctl add-port switch enp0s8
- ovs-vsctl add-port switch enp0s9 tag="2"
- ovs-vsctl add-port switch enp0s10 tag="3"
+ ovs-vsctl add-port switch enp0s9 tag="7"
+ ovs-vsctl add-port switch enp0s10 tag="8"
  ```
 
 ## Host C configuration
